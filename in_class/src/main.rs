@@ -1,13 +1,27 @@
+// Assignment 1: Temperature Converter
 
-fahrenheit_to_celsius(f: f64) -> f64{
+const FREEZING_POINT: f64 = 32.0;
 
+fn fahrenheit_to_celsius(f: f64) -> f64{
+    (f - 32.0) * 5.0 / 9.0
 }
-celsius_to_fahrenheit(c: f64) -> f64{
 
+fn celsius_to_fahrenheit(c: f64) -> f64{
+    (c * 9.0/5.0) + 32.0  
 }
 
 fn main() {
 
-    let mut result: 
+    let mut temp_f: f64 = FREEZING_POINT;
+
+    let temp_c = fahrenheit_to_celsius(temp_f);
+    println!("{}°F = {:.2}°C", temp_f, temp_c);
+
+    for _ in 0..5{
+        temp_f += 1.0;
+        let temp_c = fahrenheit_to_celsius(temp_f);
+        println!("{}°F = {:.2}°C", temp_f, temp_c);
+
+    }
 
 }
