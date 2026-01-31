@@ -1,27 +1,26 @@
-// Assignment 1: Temperature Converter
+fn get_rgb(c:char) -> (u8,u8,u8){
 
-const FREEZING_POINT: f64 = 32.0;
-
-fn fahrenheit_to_celsius(f: f64) -> f64{
-    (f - 32.0) * 5.0 / 9.0
-}
-
-fn celsius_to_fahrenheit(c: f64) -> f64{
-    (c * 9.0/5.0) + 32.0  
-}
-
-fn main() {
-
-    let mut temp_f: f64 = FREEZING_POINT;
-
-    let temp_c = fahrenheit_to_celsius(temp_f);
-    println!("{}°F = {:.2}°C", temp_f, temp_c);
-
-    for _ in 0..5{
-        temp_f += 1.0;
-        let temp_c = fahrenheit_to_celsius(temp_f);
-        println!("{}°F = {:.2}°C", temp_f, temp_c);
-
+    match c{
+        'R' => (255,0,0);
+        'G' => (0,255,0);
+        'B' => (0,0,255);
+    _ => (0,0,0);
     }
+    if c == 'R' {
+        return (255,0,0);
+    }
+
+   (0,0,0)
+}
+
+fn main(){
+
+    let letters = ['R', 'G', 'B'];
+
+    for l in letters.iter(){
+        let res = get_rgb(*1);
+        println!("{:?}", res);
+    }
+
 
 }
