@@ -1,3 +1,9 @@
-/rustprogramming
-/workspaces/spring2026/in_class/target
-/in_class
+# Ignore everything
+*
+
+# Allow the assignment folder
+!Assignment_1/
+!Assignment_1/**
+
+# Allow gitignore itself
+!.gitignore

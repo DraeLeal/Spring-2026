@@ -32,14 +32,14 @@ fn assignment_2(numbers: &[i32]){
     //loop to iterate array
     for num in numbers.iter(){
         // FizzBuzz
-        if num % 3 == 0{
+        if num % 3 == 0 && num % 5 == 0{
+            println!("{}: FizzBuzz", num);
+        }
+        else if num % 3 == 0{
             println!("{}: Fizz", num);
         }
         else if num % 5 == 0{
             println!("{}: Buzz", num);
-        }
-        else if num % 3 == 0 && num % 5 == 0{
-            println!("{}: FizzBuzz", num);
         }
         // Even Or Odd
         else{
@@ -119,11 +119,11 @@ fn assignment_3(){
 
 fn main() {
 
-    assignment_1();
+   // assignment_1();
 
     //Assignment 2 array
     let numbers: [i32; 10] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-    assignment_2(&numbers);
+   //assignment_2(&numbers);
 
     assignment_3();
    
