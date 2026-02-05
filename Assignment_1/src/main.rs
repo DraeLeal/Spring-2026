@@ -119,11 +119,11 @@ fn assignment_3(){
 
 fn main() {
 
-   // assignment_1();
+    assignment_1();
 
-    //Assignment 2 array
+    // Assignment 2 array
     let numbers: [i32; 10] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-   //assignment_2(&numbers);
+    assignment_2(&numbers);
 
     assignment_3();
    
