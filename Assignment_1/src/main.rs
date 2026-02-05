@@ -2,11 +2,11 @@
 const FREEZING_POINT: f64 = 32.0;
 
 fn fahrenheit_to_celsius(f: f64) -> f64{
-    (f - 32.0) * 5.0 / 9.0
+    (f - FREEZING_POINT) * 5.0 / 9.0
 }
 
 fn celsius_to_fahrenheit(c: f64) -> f64{
-    (c * 9.0/5.0) + 32.0  
+    (c * 9.0/5.0) + FREEZING_POINT  
 }
 
 fn assignment_1(){
@@ -117,18 +117,14 @@ fn assignment_3(){
     }
 
 
-
 fn main() {
 
     assignment_1();
 
-    //Array for assignment 2
+    //Assignment 2 array
     let numbers: [i32; 10] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-    //call assignment 2
     assignment_2(&numbers);
 
     assignment_3();
    
 }
-
-
