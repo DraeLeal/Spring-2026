@@ -24,7 +24,8 @@ fn assignment_1(){
 }
 
 // Assignment_2
-fn assignment_2(numbers: &[i32]){
+fn assignment_2(){
+    let numbers: [i32; 10] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
     //Even or Odd function
     fn is_even(n: i32) -> bool{
     n % 2 == 0
@@ -120,10 +121,8 @@ fn assignment_3(){
 fn main() {
 
     assignment_1();
-
-    // Assignment 2 array
-    let numbers: [i32; 10] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-    assignment_2(&numbers);
+    
+    assignment_2();
 
     assignment_3();
    
