@@ -4,6 +4,8 @@
 # Allow the assignment folder
 !Assignment_1/
 !Assignment_1/**
+!Assignment_2/
+!Assignment_2/**
 
 # Allow gitignore itself
 !.gitignore
