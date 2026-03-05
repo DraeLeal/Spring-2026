@@ -6,6 +6,8 @@
 !Assignment_1/**
 !Assignment_2/
 !Assignment_2/**
+!book_catalog/
+!book_catalog/**
 
 # Allow gitignore itself
 !.gitignore
