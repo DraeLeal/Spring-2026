@@ -8,6 +8,8 @@
 !Assignment_2/**
 !book_catalog/
 !book_catalog/**
+!Enums_interactive/
+!Enums_interactive/**
 
 # Allow gitignore itself
 !.gitignore
