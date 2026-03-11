@@ -10,6 +10,8 @@
 !book_catalog/**
 !Enums_interactive/
 !Enums_interactive/**
+!bank_account/
+!bank_account/**
 
 # Allow gitignore itself
 !.gitignore
