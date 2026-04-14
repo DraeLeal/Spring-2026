@@ -12,6 +12,7 @@
 !Enums_interactive/**
 !bank_account/
 !bank_account/**
-
+!assignment_concurrency/
+!assignment_concurrency/**
 # Allow gitignore itself
 !.gitignore
